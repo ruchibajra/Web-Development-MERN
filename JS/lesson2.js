@@ -231,3 +231,6 @@ if ( year%4 === 0 && year % 100 !==0){
 }else{
     console.log(`${year} is NOT a leap year`);
 }
+
+// QNO5: Take a month number (1-12) as input and returns the number of days in that month using switch case
+
