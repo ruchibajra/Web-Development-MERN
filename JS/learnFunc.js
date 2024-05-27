@@ -1,3 +1,4 @@
+//FUNCTION
 
 // (This is not efficient)
 
@@ -60,8 +61,21 @@ divValue =  div(4,2);
 console.log(divValue);
 
 // c. Arrow Function (ES6)
+
+//example 1
 let multiply = (a,b) => a * b;
 
 multiplyValue = multiply(5,5);
 console.log(multiplyValue);
+
+
+//example 2
+const greeting = (name, age) => {
+    return (`Hi my name is ${name}, I am ${age} years old`)
+}
+
+console.log(greeting('Ruchi', 21));
+
+// d. Immediately Invoked Function Expression (not so important)
+// e. Generaator Function (not so important)
 
