@@ -210,15 +210,75 @@ maximum. */
 
 /*12. Create a function that checks if a given year is a leap year. */
 
-function isLeapYear(year) {
-    // Leap years are divisible by 4, except for years divisible by 100 unless they are also divisible by 400
-    return (year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0);
+// function isLeapYear(year) {
+//     // Leap years are divisible by 4, except for years divisible by 100 unless they are also divisible by 400
+//     return (year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0);
+//   }
+  
+//   console.log(isLeapYear(2020)); // Output: true
+//   console.log(isLeapYear(2021)); // Output: false
+//   console.log(isLeapYear(1900)); // Output: false
+//   console.log(isLeapYear(2000)); // Output: true
+// --------------------------------------------------------------------------------
+
+/*13. Write a function that merges two arrays and returns the sorted result.*/
+
+// function mergeAndSortArrays(arr1, arr2) {
+//     // Merge the two arrays
+//     const mergedArray = arr1.concat(arr2);
+  
+//     // Sort the merged array in ascending order
+//     mergedArray.sort(function(a, b) {
+//       return a - b;
+//     });
+  
+//     return mergedArray;
+//   }
+  
+//   const array1 = [5, 2, 9, 1];
+//   const array2 = [7, 3, 6, 8];
+//   console.log(mergeAndSortArrays(array1, array2)); // Output: [1, 2, 3, 5, 6, 7, 8, 9]
+
+// 14. Create a function that converts a number to its Roman numeral representation.
+function convertToRoman(num) {
+    // Define the Roman numerals and their corresponding values
+    const romanNumerals = [
+      { value: 1000, numeral: 'M' },
+      { value: 900, numeral: 'CM' },
+      { value: 500, numeral: 'D' },
+      { value: 400, numeral: 'CD' },
+      { value: 100, numeral: 'C' },
+      { value: 90, numeral: 'XC' },
+      { value: 50, numeral: 'L' },
+      { value: 40, numeral: 'XL' },
+      { value: 10, numeral: 'X' },
+      { value: 9, numeral: 'IX' },
+      { value: 5, numeral: 'V' },
+      { value: 4, numeral: 'IV' },
+      { value: 1, numeral: 'I' }
+    ];
+  
+    // Initialize the result as an empty string
+    let result = '';
+  
+    // Loop through the Roman numerals and construct the result
+    for (let i = 0; i < romanNumerals.length; i++) {
+      while (num >= romanNumerals[i].value) {
+        result += romanNumerals[i].numeral;
+        num -= romanNumerals[i].value;
+      }
+    }
+  
+    // Return the final Roman numeral representation
+    return result;
   }
   
-  console.log(isLeapYear(2020)); // Output: true
-  console.log(isLeapYear(2021)); // Output: false
-  console.log(isLeapYear(1900)); // Output: false
-  console.log(isLeapYear(2000)); // Output: true
+  // Example usage:
+  console.log(convertToRoman(3));    // Output: "III"
+  console.log(convertToRoman(4));    // Output: "IV"
+  console.log(convertToRoman(9));    // Output: "IX"
+  console.log(convertToRoman(58));   // Output: "LVIII"
+  console.log(convertToRoman(1994)); // Output: "MCMXCI
 
 
 
