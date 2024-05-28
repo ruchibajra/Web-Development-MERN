@@ -240,46 +240,165 @@ maximum. */
 //   console.log(mergeAndSortArrays(array1, array2)); // Output: [1, 2, 3, 5, 6, 7, 8, 9]
 
 // 14. Create a function that converts a number to its Roman numeral representation.
-function convertToRoman(num) {
-    // Define the Roman numerals and their corresponding values
-    const romanNumerals = [
-      { value: 1000, numeral: 'M' },
-      { value: 900, numeral: 'CM' },
-      { value: 500, numeral: 'D' },
-      { value: 400, numeral: 'CD' },
-      { value: 100, numeral: 'C' },
-      { value: 90, numeral: 'XC' },
-      { value: 50, numeral: 'L' },
-      { value: 40, numeral: 'XL' },
-      { value: 10, numeral: 'X' },
-      { value: 9, numeral: 'IX' },
-      { value: 5, numeral: 'V' },
-      { value: 4, numeral: 'IV' },
-      { value: 1, numeral: 'I' }
-    ];
+// function convertToRoman(num) {
+//     // Define the Roman numerals and their corresponding values
+//     const romanNumerals = [
+//       { value: 1000, numeral: 'M' },
+//       { value: 900, numeral: 'CM' },
+//       { value: 500, numeral: 'D' },
+//       { value: 400, numeral: 'CD' },
+//       { value: 100, numeral: 'C' },
+//       { value: 90, numeral: 'XC' },
+//       { value: 50, numeral: 'L' },
+//       { value: 40, numeral: 'XL' },
+//       { value: 10, numeral: 'X' },
+//       { value: 9, numeral: 'IX' },
+//       { value: 5, numeral: 'V' },
+//       { value: 4, numeral: 'IV' },
+//       { value: 1, numeral: 'I' }
+//     ];
   
-    // Initialize the result as an empty string
-    let result = '';
+//     // Initialize the result as an empty string
+//     let result = '';
   
-    // Loop through the Roman numerals and construct the result
-    for (let i = 0; i < romanNumerals.length; i++) {
-      while (num >= romanNumerals[i].value) {
-        result += romanNumerals[i].numeral;
-        num -= romanNumerals[i].value;
-      }
-    }
+//     // Loop through the Roman numerals and construct the result
+//     for (let i = 0; i < romanNumerals.length; i++) {
+//       while (num >= romanNumerals[i].value) {
+//         result += romanNumerals[i].numeral;
+//         num -= romanNumerals[i].value;
+//       }
+//     }
   
-    // Return the final Roman numeral representation
-    return result;
+//     // Return the final Roman numeral representation
+//     return result;
+//   }
+  
+//   console.log(convertToRoman(3));    // Output: "III"
+//   console.log(convertToRoman(4));    // Output: "IV"
+//   console.log(convertToRoman(9));    // Output: "IX"
+//   console.log(convertToRoman(58));   // Output: "LVIII"
+//   console.log(convertToRoman(1994)); // Output: "MCMXCI
+
+
+//   15. Write a function that finds the second smallest element in an array of numbers.
+
+//   function secondSmallest(arr) {
+//     // Check if the array has at least two elements
+//     if (arr.length < 2) {
+//       throw new Error('Array must contain at least two elements');
+//     }
+  
+//     // Initialize the smallest and second smallest values
+//     let smallest = Infinity;
+//     let secondSmallest = Infinity;
+  
+//     // Iterate through the array
+//     for (let i = 0; i < arr.length; i++) {
+//       if (arr[i] < smallest) {
+//         // Update second smallest and smallest
+//         secondSmallest = smallest;
+//         smallest = arr[i];
+//       } else if (arr[i] < secondSmallest && arr[i] != smallest) {
+//         // Update second smallest if it's not equal to the smallest
+//         secondSmallest = arr[i];
+//       }
+//     }
+  
+//     // Return the second smallest value
+//     return secondSmallest;
+//   }
+  
+//   const numbers = [5, 2, 9, 1, 5, 6];
+//   console.log(secondSmallest(numbers)); // Output: 2
+  
+//   const numbers2 = [12, 13, 1, 10, 34, 1];
+//   console.log(secondSmallest(numbers2)); // Output: 10
+
+// 16. Create a function that calculates the area of a circle given its radius.
+
+// function calculateCircleArea(radius) {
+//     // Calculate the area using the formula: π * r^2
+//     const area = Math.PI * radius ** 2;
+  
+//     // Return the calculated area
+//     return area;
+//   }
+  
+//   console.log(calculateCircleArea(5)); // Output: approximately 78.54
+//   console.log(calculateCircleArea(10)); // Output: approximately 314.16
+//   console.log(calculateCircleArea(2.5)); // Output: approximately 19.63
+  
+
+//17. Write a function that truncates a string if it exceeds a specified length and appends "..." to the end.
+
+// function truncateString(str, maxLength) {
+//     // Check if the string length exceeds the specified maxLength
+//     if (str.length > maxLength) {
+//       // Truncate the string and append "..."
+//       return str.slice(0, maxLength) + "...";
+//     }
+    
+//     // If the string length is within the maxLength, return the original string
+//     return str;
+//   }
+  
+//   console.log(truncateString("Lorem ipsum dolor sit amet", 10)); // Output: "Lorem ipsu..."
+//   console.log(truncateString("Hello, world!", 7)); // Output: "Hello, ..."
+//   console.log(truncateString("This is a short string.", 50)); // Output: "This is a short string."
+
+// 18. Create a function that checks if a given string contains only digits.
+// function containsOnlyDigits(str) {
+//     // Regular expression to match only digits
+//     const digitRegex = /^[0-9]+$/;
+  
+//     // Test if the string matches the digit regex
+//     return digitRegex.test(str);
+//   }
+  
+//   console.log(containsOnlyDigits("12345")); // Output: true
+//   console.log(containsOnlyDigits("123abc")); // Output: false
+//   console.log(containsOnlyDigits("")); // Output: false (empty string)
+//   console.log(containsOnlyDigits("456 789")); // Output: false (contains whitespace)
+
+// 19. Write a function that removes all falsy values (false, null, 0, "", undefined, and NaN) from
+// an array.
+
+// function removeFalsyValues(arr) {
+//     // Initialize an empty array to store truthy values
+//     const truthyValues = [];
+  
+//     // Loop through the array
+//     for (let i = 0; i < arr.length; i++) {
+//       // Check if the current element is truthy
+//       if (arr[i]) {
+//         // If truthy, push it to the truthyValues array
+//         truthyValues.push(arr[i]);
+//       }
+//     }
+  
+//     // Return the array containing only truthy values
+//     return truthyValues;
+//   }
+  
+//   // Example usage:
+//   const array = [0, 1, false, 2, "", 3, null, undefined, NaN, 4];
+//   console.log(removeFalsyValues(array)); // Output: [1, 2, 3, 4]
+
+
+// 20. Create a function that generates a new array with unique values from a given array.
+
+function getUniqueValues(arr) {
+    // Use the Set object to store unique values
+    const uniqueValuesSet = new Set(arr);
+  
+    // Convert the Set back to an array
+    const uniqueValuesArray = Array.from(uniqueValuesSet);
+  
+    // Return the array with unique values
+    return uniqueValuesArray;
   }
   
   // Example usage:
-  console.log(convertToRoman(3));    // Output: "III"
-  console.log(convertToRoman(4));    // Output: "IV"
-  console.log(convertToRoman(9));    // Output: "IX"
-  console.log(convertToRoman(58));   // Output: "LVIII"
-  console.log(convertToRoman(1994)); // Output: "MCMXCI
-
-
-
+  const array = [1, 2, 3, 2, 4, 5, 3, 6, 7, 1];
+  console.log(getUniqueValues(array)); // Output: [1, 2, 3, 4, 5, 6, 7]
   
