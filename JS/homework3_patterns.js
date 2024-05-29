@@ -115,7 +115,6 @@ Inverted Pyramid:
 // }
 //------------------------------------------------
 
-
 /*
 
 Hollow Rectangle:
@@ -311,11 +310,28 @@ ABCD
 ABCDE
 
 */
+// let rows = 5;
+// for (let i = 1; i <= rows; i++) {
+//     let line = '';
+//     for (let j = 1; j <= i; j++) {
+//         line += String.fromCharCode(64 + j);
+//     }
+//     console.log(line);
+// }
+
+
+// 12345
+// 1234
+// 123
+// 12
+// 1
+
 let rows = 5;
-for (let i = 1; i <= rows; i++) {
-    let line = '';
-    for (let j = 1; j <= i; j++) {
-        line += String.fromCharCode(64 + j);
+
+for(let i = rows; i>=1; i--){
+    let pattern = "";
+    for(let j = 1; j<=i; j++ ){
+        pattern = pattern + j;
     }
-    console.log(line);
+    console.log(pattern);
 }

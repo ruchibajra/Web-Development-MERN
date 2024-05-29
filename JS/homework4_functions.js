@@ -347,6 +347,7 @@ maximum. */
 //   console.log(truncateString("This is a short string.", 50)); // Output: "This is a short string."
 
 // 18. Create a function that checks if a given string contains only digits.
+
 // function containsOnlyDigits(str) {
 //     // Regular expression to match only digits
 //     const digitRegex = /^[0-9]+$/;
