@@ -36,7 +36,9 @@
 
 /* home section start */
 .home{
-    background-color: rgb(186, 186, 186);
+    background-image: url(https://img.freepik.com/free-photo/abstract-luxury-blur-grey-color-gradient-used-as-background-studio-wall-display-your-products_1258-52609.jpg?t=st=1717438503~exp=1717442103~hmac=30bad661b2b194e9ed109bf972800b19351c42675e4e6bc9b3190666d8e6ef13&w=1380);
+    background-size: cover;
+    /* background-color: rgb(186, 186, 186); */
     display: flex;
     width: 100%;
     height: 710px;
