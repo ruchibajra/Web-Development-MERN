@@ -1,0 +1,88 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.navbar {
+  height: 4rem;
+  background-color: black;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.navbar span {
+  color: white;
+}
+
+.navbar-heros {
+  width: 580px;
+  display: flex;
+  list-style-type: none;
+  justify-content: space-evenly;
+}
+
+.navbar-heros a {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar-socials {
+  width: 190px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* home section start */
+.home{
+    background-color: rgb(186, 186, 186);
+    display: flex;
+    width: 100%;
+    height: 710px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.home img{
+    background-color: aqua;
+    border-radius: 100%;
+    border: 10px solid #2FB297;
+}
+
+.home-desc{
+    width: 30rem;
+}
+
+.self-intro{
+    font-size: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.self-intro-desc{
+    margin-top: 30px;
+}
+
+button{
+    margin-top: 30px;
+    width: 7rem;
+    height: 2rem;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    background-color: #2FB297;
+    color: white;
+    border-radius: 0.3rem;
+    border: none;
+}
+
+mark{
+    background-color: white;
+    color: #2FB297;
+}
+/* home section end */
+
+/* about me page start */
+.about-me{
+    height: 710px;
+}
+/* about me page end */
+
