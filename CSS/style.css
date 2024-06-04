@@ -1,7 +1,8 @@
-* {
+/* external style */
+/* * {
   margin: 0px;
   padding: 0px;
-}
+} */
 
 .navbar {
   height: 4rem;
@@ -23,6 +24,10 @@
   justify-content: space-evenly;
 }
 
+.navbar-heros ul {
+    list-style-type: none;
+}
+
 .navbar-heros a {
   color: white;
   text-decoration: none;
@@ -36,7 +41,7 @@
 
 /* home section start */
 .home{
-    background-image: url(https://img.freepik.com/free-photo/abstract-luxury-blur-grey-color-gradient-used-as-background-studio-wall-display-your-products_1258-52609.jpg?t=st=1717438503~exp=1717442103~hmac=30bad661b2b194e9ed109bf972800b19351c42675e4e6bc9b3190666d8e6ef13&w=1380);
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPDfdDR_KG2HTKXlgaK0If1LF85FM2i1AYGg&s);
     background-size: cover;
     /* background-color: rgb(186, 186, 186); */
     display: flex;
@@ -87,4 +92,11 @@ mark{
     height: 710px;
 }
 /* about me page end */
+
+table,
+td,
+th{
+  border: 2px solid red;
+  border-collapse: collapse;
+}
 

@@ -7,6 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ruchi Bajracharya</title>
     <link rel="stylesheet" href="../CSS/style.css" />
+
+    <!-- internal style -->
+    <style>
+      .list-learn{
+        background-color: orange;
+      }      
+    </style>
   </head>
   <body>
     <!-- NAVBAR START -->
@@ -89,5 +96,118 @@
       </p>
     </div>
     <!-- ABOUT ME PAGE END -->
+
+    <div class="list-learn">
+
+      <!-- inline style -->
+      <ul style = "list-style-type: disc;">
+        <li>Badminton</li>
+        <li>Dancing</li>
+        <li>Reading Books</li>
+      </ul>
+
+      <ul style = "list-style-type: circle;">
+        <li>Badminton</li>
+        <li>Dancing</li>
+        <li>Reading Books</li>
+      </ul>
+
+      <ul style = "list-style-type: square;">
+        <li>Badminton</li>
+        <li>Dancing</li>
+        <li>Reading Books</li>
+      </ul>
+
+      <ul style = "list-style-type: none;">
+        <li>Badminton</li>
+        <li>Dancing</li>
+        <li>Reading Books</li>
+      </ul>
+
+      <ol type = '1' start="10">
+        <li>Mobile</li>
+        <li>Phone</li>
+        <li>Telephone</li>
+      </ol>
+    </div>
+
+    <table border="1">
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Age</th>
+      </tr>
+
+      <tr>
+        <td>Reena</td>
+        <td>Prerana</td>
+        <td>25</td>
+      </tr>
+
+      <tr>
+        <td>Raunak</td>
+        <td>Aryan</td>
+        <td>30</td>
+      </tr>
+    </table>
+<br>
+
+  <form action="">
+  <label for = "fname"> First Name: </label> 
+  <input type="text" id="fname" name="fname"> 
+
+
+  <label for = "lname"> Last Name: </label> 
+  <input type="text" id="lname" name="lname"  > <br> <br> 
+
+  <label for="desc"> Tell me about yourself: </label> <br>
+  <textarea name="desc" id="desc" rows="10" cols="50"></textarea> <br> <br>
+
+  <select>
+    <option value="male">Male</option>
+    <option value="female" selected>Female</option>
+    <option value="others">Others</option>
+  </select>
+
+  <select multiple> 
+    <option value="red">Red</option>
+    <option value="blue">Blue</option>
+    <option value="white">white</option>
+  </select>
+  <br>
+
+
+  <!-- RADIO BUTTONS -->
+  <input type="radio" id="male" name="gender" value="male"/>
+  <label for="male"> Male </label>
+
+  <input type="radio" id="female" name="gender" value="female" checked/>
+  <label for="female"> Female </label>
+
+  <input type="radio" id="others" name="gender" value="others"/>
+  <label for="others"> Others </label>
+
+  <!-- CHECKED BOX -->
+  <input type="checkbox" id="male" name="gender" value="male"/>
+  <label for="male"> Male </label>
+
+  <input type="checkbox" id="female" name="gender" value="female" checked/>
+  <label for="female"> Female </label>
+
+  <input type="checkbox" id="others" name="gender" value="others" />
+  <label for="others"> Others </label>
+
+
+  <br>
+  <br>
+
+  <!-- PLACEHOLDER -->
+  <input type="text" placeholder="Enter email" maxlength="30" size="20" readonly disabled required autofocus>
+
+  <input type="submit" value="Submit">
+
+
+
+  </form>
   </body>
 </html>
