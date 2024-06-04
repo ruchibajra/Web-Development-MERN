@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML BASICS</title>
+
+    <style>
+      thead {
+        color: green;
+      }
+      tbody {
+        color: blue;
+      }
+      tfoot {
+        color: red;
+      }
+
+      table,
+      th,
+      td {
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Understanding the use of thead, tbody and tfoot in HTML START -->
+    <h1>thead, tbody and tfoot in HTML</h1>
+
+    <table>
+      <thead>
+        <tr>
+          <th>S.N.</th>
+          <th>Fruits</th>
+          <th>Color</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1.</td>
+          <td>Mango</td>
+          <td>Yellow</td>
+        </tr>
+
+        <tr>
+          <td>2.</td>
+          <td>Apple</td>
+          <td>Read</td>
+        </tr>
+      </tbody>
+
+      <tfoot>
+        <tr>
+          <td>3.</td>
+          <td>Grapes</td>
+          <td>Green</td>
+        </tr>
+      </tfoot>
+    </table>
+    <!-- Understanding the use of thead, tbody and tfoot in HTML END -->
+
+    <!-- Rowspan and Colspan Start-->
+    <h1>Rowspan</h1>
+    <table style="width: 100%">
+      <tr>
+        <th>Name</th>
+        <td>Jill</td>
+      </tr>
+      <tr>
+        <th rowspan="2">Phone</th>
+        <td>555-1234</td>
+      </tr>
+      <tr>
+        <td>555-8745</td>
+      </tr>
+    </table>
+    <br />
+
+    <h1>Colspan</h1>
+    <table style="width: 100%">
+      <tr>
+        <th colspan="2">Name</th>
+        <th>Age</th>
+      </tr>
+      <tr>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>43</td>
+      </tr>
+      <tr>
+        <td>Eve</td>
+        <td>Jackson</td>
+        <td>57</td>
+      </tr>
+    </table>
+    <!-- Rowspan and Colspan End-->
+
+    <br />
+
+    <!-- Embed PDF Files START -->
+    <h1>Embed PDF Files in HTML</h1>
+    <object
+      class="pdf"
+      data="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20210101201653/PDF.pdf"
+      width="800"
+      height="500"
+    ></object>
+    <!-- Embed PDF Files END -->
+    <br />
+
+    <!-- Embed Google Map START -->
+
+    <!-- Embed Google Map END -->
+    <br />
+    
+    <!-- Embed Youtube Video START -->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/NoltgGRat2Y?si=zx9mZ1AW0Yi5aoDf" title="YouTube video player" frameborder="0"></iframe>
+    <!-- Embed Youtube Video END -->
+  </body>
+</html>
