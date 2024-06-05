@@ -1,0 +1,57 @@
+/* element selecor */
+h1{
+    color: red;
+}
+
+/* universal selector */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Pseudo class selector START*/ 
+#link1:link{
+    color: red;
+}
+
+#link1:active{
+    color: yellow;
+}
+
+#link1:hover{
+    color:green;
+}
+
+#link1:visited{
+    color: gray;
+}
+/* Pseudo class selector END*/ 
+
+
+/* Pseudo element selector START */
+p::first-letter{
+    text-transform: uppercase;
+}
+p::first-line{
+    font-size: 16px;
+}
+
+h4::before{
+    content: url("image.png");
+    
+}
+
+h4::after{
+    content: "this is a content";
+    
+}
+
+a[target = "_blank"]{
+    background-color: yellow;
+}
+/* Pseudo element selector END */
+
+.main-div h1{
+    background-color: green;
+    color: white;
+}
