@@ -1,0 +1,7 @@
+1. cascading order
+
+1st: important
+2nd: inline
+3rd: internal or external css
+
+2. General rule of specificity
