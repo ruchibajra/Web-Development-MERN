@@ -5,3 +5,11 @@
 3rd: internal or external css
 
 2. General rule of specificity
+
+3. block element - that takes the whole wide of the screen li p h1 (new line takes full width), height width can be applied
+and inline element - takes space of own - strong span (no new line no full width) height width CANNOT be applied
+inline block element -  no new line no full width, height width can be applied
+
+4. display none
+
+

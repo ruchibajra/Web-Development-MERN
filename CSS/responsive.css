@@ -1,0 +1,19 @@
+img{
+ height: 500px;
+}
+
+@media screen and (max-width : 426px) {
+    img{
+        width: 380px;
+        height: 245px;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width : 375px) {
+    img{
+        width: 380px;
+        height: 245px;
+        padding: 10px;
+    }
+}

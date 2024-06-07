@@ -1,0 +1,52 @@
+/* copilot */
+/* display, visibility, position
+
+position
+static = bydefault static (top bottom left right cant be done here 
+relative = normal flow anushar kam garcha kasaiko [parent or root] lai liyera relate garcha = goes with the noremal flow happening in the code
+absolute = gives position based on parent
+fixed = the position will be fixed in its real postion and overlap other content 
+sticky = reach to the certain position and stick to this 
+
+*/
+
+.demo{
+    /* display: none; */
+    visibility: hidden;
+}
+
+.main-div{
+    height: 500px;
+    width: 700px;
+    background-color: purple;
+    position: relative;
+}
+
+.second-div{
+    height: 300px;
+    width: 300px;
+    background-color: red;
+    position: absolute;
+   
+    /* center without using display flex */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /*gives opposite side values too bottom and right*/
+}
+
+.third-div{
+    position: fixed;
+    height: 500px;
+    width: 200px;
+    top: 150px;
+    left: 500px;
+    background-color: pink;
+}
+
+.fourth-div{
+    background-color: aqua;
+    height: 100px;
+    width: 100px;
+    position: sticky;
+    top: 15px;
+}
