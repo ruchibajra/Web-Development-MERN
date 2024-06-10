@@ -1,0 +1,70 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+.navbar {
+  height: 4rem;
+  width: 100VW;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.navbar-logo {
+  width: 3vw;
+  height: 6vh;
+  /* background-color: pink; */
+  background-image: url(https://freepnglogo.com/images/all_img/1713419166FB_Logo_PNG.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.navbar-links {
+  width: 500px;
+  height: 100%;
+  /* background-color: orange; */
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.navbar-signin-out {
+  width: 200px;
+  height: 100%;
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+/* MAIN DIV START */
+.flex-container {
+  height: 500px;
+  display: flex;
+  background-color: blueviolet;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  /* justify-content: center; */
+  justify-content: space-around;
+  /* justify-content: space-evenly; */
+  /* justify-content: end; */
+  flex-wrap: wrap;
+  /* flex-direction: column; */
+  /* flex-direction: row-reverse; */
+  align-items: center;
+}
+
+.flex-container > div {
+  background-color: aliceblue;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+}
+/* MAIN DIV END */
