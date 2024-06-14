@@ -49,8 +49,6 @@ paragraphElement.innerHTML = "This is a <strong> modified </strong> paragrapgh";
 // const bodyElement = document.body;
 // bodyElement.appendChild(newElement);
 
-
-
 /* DOM Manipulation in Javascript
 d- document (refers to web page)
 o- object (represent element or entity in the document eg. html tags, attributes, text etc)

@@ -1,17 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Event Handling</title>
-</head>
-<body>
-
+  </head>
+  <body>
     <h2>Javascript HTML Events</h2>
-    <p>click the button to display </p>
+    <p id="para" onclick="{modifyPara()}">click the button to display</p>
+    <button onclick="{displayDate()}">The time is?</button>
 
-    <button>The time is?</button>
+    <button id="btn1" onclick="{btn1OnClick()}">Click me</button>
     <p id="demo"></p>
-    
-</body>
+
+    <script>
+      function displayDate() {
+        document.getElementById("demo").innerHTML = Date();
+      }
+
+      function btn1OnClick() {
+        let btn1Event = document.getElementById("btn1");
+        btn1Event.addEventListener("click", function () {
+          console.log("button clicked");
+        });
+      }
+
+      function modifyPara(){
+        let paragraphElement = document.getElementById('para');
+        paragraphElement.style.color = 'red';
+      }
+
+
+    </script>
+  </body>
 </html>
