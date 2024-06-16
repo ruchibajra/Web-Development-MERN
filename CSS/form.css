@@ -43,16 +43,16 @@ input {
     border-radius: 5px;
 }
 
-.password-container {
+.password-container, .confirm-password-container {
     display: flex;
     align-items: center;
 }
 
-.password-container input {
+.password-container input, .confirm-password-container input {
     flex: 1;
 }
 
-.password-container i {
+.password-container i, .confirm-password-container i{
     margin-left: -30px;
     cursor: pointer;
 }
